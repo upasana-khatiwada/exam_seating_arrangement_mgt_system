@@ -15,7 +15,7 @@ public class StudentDao extends Dao {
     }
 
     public List<Student> getAll() {
-        String query = "select id, name from student";
+        String query = "select id, name,sem from student";
         List<Student> students = new ArrayList<>();
         try {
             PreparedStatement statement = connection.prepareStatement(query);
